@@ -1,0 +1,154 @@
+html{
+    
+    background-color: rgb(8, 238, 254);
+   
+}
+
+
+/*mise en form du form*/
+form {
+    width: 50%;
+    min-width: 50%;
+
+    left: 22%;
+    top: 10vh;
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(131, 151, 222);
+    z-index: 2;
+    position: relative;
+  
+  }
+  
+  
+  
+  
+  /*mise en forme legend*/
+  legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+  /* Style pour les cases supplémentaires cachées */
+   #details {
+    display: none;
+  }
+  
+
+  /*mise en forme du select*/
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+   
+  /* mise en forme du text area et des input text email */
+  input[type=text],
+  input[type=email],
+
+  textarea {
+      border-radius: 5px; 
+      width : 100%;
+      min-width: 100%;
+      border: solid cornflowerblue;
+      border-width: 2px;
+  }
+  
+  /*mise en forme du fieldset*/
+  fieldset {
+    width : 88%;
+    min-width: 88%;
+    border-width: 0px 0px 2px 0px;
+    padding: 10px;
+    border: 3px solid #1d0282;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: left;
+    color: #fff;
+  }
+  
+  /* si reponse invalide dans input mettre les bordures en rouge*/
+  input:invalid {
+  
+    border: dotted rgb(255, 81, 81);
+    border-width: 3px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    background: lightsteelblue;
+  }
+  
+  /*bouton permettant d'envoyer les informations*/
+  input[type="submit"] {
+    width: 100%;
+    background-color: #1d0282;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* changement de couleur quand on passe sur le bouton envoyer*/
+  input[type="submit"]:hover {
+    background-color: #455fa0;
+  }
+  
+
+/*cache la question tant que la réponse est oui*/
+  .next-question {
+    display: none;
+  }
+  /*si la réponse est non alors la question apparâit*/
+  input[value="no"]:checked ~ #next-question {
+    display: block;
+  }
+  
+
+  
+@media only screen and (min-width: 1600px) {
+    /* styles spécifiques pour les écrans de largeur supérieure à 1600px */
+   
+    /*mise en forme du questionnaire*/
+    form {
+      width: 70%;
+      min-width: 70%;
+      height: auto;
+      min-height: auto;
+      left: 14%;
+      top: 10vh;
+
+      padding: 20px;
+      border: 3px solid rgb(0, 0, 0);
+      border-radius: 5px;
+      background-color: rgb(131, 151, 222);
+      z-index: 2;
+      position: relative;
+    
+    }
+/*mise en forme cases fieldset*/
+    fieldset {
+        width : 98%;
+        min-width: 98%;
+        border-width: 0px 0px 2px 0px;
+        padding: 10px;
+        border: 3px solid #1d0282;
+        border-radius: 5px;
+        background-color: transparent;
+        text-align: left;
+        color: #fff;
+      }
+      
+  
+  
+  }
+  
+ 

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/back.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+    <title>Form</title>
+  </head>
+
+  <body>
+<!--barre de navigation-->
+    <main>
+      <nav>
+        <a href="index.html">Home </a>
+        <a href="form.html" target="_blank">Form</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </nav>
+      <section>
+        
+        <form>
+          <h1>Questionnaire sur la participation à la ville de Nice plus écologique</h1>
+          <h2>Partie 1 : Présentation de l'entreprise</h2>
+          <!--question sur la taille des entreprises-->
+          <div class="form-group">
+            <fieldset>
+              <legend>Taille de l'entreprise :</legend><br>
+              <select class="form-control" id="taille" name="taille">
+                <option value="vide">- - -</option>
+                <option value="petite">TPE (Très Petite entreprise)</option>
+                <option value="moyenne">PME (Petite moyenne entreprise)</option>
+                <option value="inter">ETI (Entreprise de taille intermédiaire)</option>
+                <option value="grande-e">GE (Grande entreprise)</option>
+              </select>
+            </fieldset>
+            
+          </div>
+          <br><br>
+          <!--secteur d'activité des entreprises-->
+          <fieldset>
+            <legend>Secteur d'activité :</legend>
+            <input id="pr" type="radio" name="choix" value="prim">
+              <label >Primaire</label><br>
+              <input id="sc" type="radio" name="choix"  value="second">
+              <label >Secondaire</label><br>
+              <input id="ter" type="radio" name="choix" value="tertiai">
+              <label >Tertiaire</label>
+            </fieldset>
+            <br><br>
+        
+            <!--%des employés utilisant véhicules motorisés-->
+          <fieldset>
+            <legend>Pourcentage d'employés qui utilisent des véhicules motorisés pour se rendre au travail :</legend><br>
+            <input type="number" min="0" max="100" step="1" required/>
+          </fieldset>
+
+          <br><br>
+          <h2>Partie 2 : Renseignement sur l'entreprise et aménagements</h2>
+          <br><br>
+          <!--question sur les emplacements avec conditions-->
+          <fieldset>
+            <legend>Vos locaux disposent-ils d'emplacements vélos/trottinettes électriques ou borne de recharge pour voiture électrique ?</legend>
+            <br>
+            <input type="radio" name="used" value="yes" id="yes">
+            <label for="yes">Oui</label>
+            <br>
+            <input type="radio" name="used" value="no" id="no">
+            <label for="no">Non</label>
+            <br>
+  
+            <div class="next-question" id="next-question">
+              <label>Seriez-vous prêt à en construire et/ou en fournir?</label>
+              <br>
+              <input type="radio" name="used" value="y" id="oui" >
+              <label for="yes">Oui</label>
+              <br>
+              <input type="radio" name="used" value="n" id="non">
+              <label for="no">Non</label>
+            </div>
+          </fieldset>
+         <br><br>
+         <!--question sur augmentation des titres de transports-->
+          <fieldset>
+            <legend>Seriez-vous prêt à augmenter la prise en charge des titres de transports de vos employés ?</legend>
+            <br>
+            <input type="radio" name="used" value="yes" id="ok">
+            <label for="yes">Oui</label>
+            <br>
+            <input type="radio" name="used" value="no" id="pas">
+            <label for="no">Non</label>
+            <br>
+          </fieldset>
+         
+          <br><br>
+          <!--%des employés en télétravail-->
+          <fieldset>
+            <legend>Pourcentage d'employés en télétravail:</legend><br>
+            <input type="number" min="0" max="100" step="1" required/>
+          </fieldset>
+          <br><br>
+          <fieldset>
+            <legend>Seriez-vous prêt à proposer à des employés de travailler à distance?</legend>
+            <br>
+            <input type="radio" name="used" value="yes" id="ot">
+            <label for="yes">Oui</label>
+            <br>
+            <input type="radio" name="used" value="no" id="nt">
+            <label for="no">Non</label>
+            <br>
+          </fieldset>
+          <br><br>
+          
+          <!--participation au projezt-->
+          <fieldset>
+            <legend>Seriez-vous prêt à participer au projet pour améliorer le trafic à Nice et la rendre plus écologique?</legend>
+            <input id="bcp" type="radio" name="choix" value="bcp">
+            <label >Beaucoup</label><br>
+            <input id="mod" type="radio" name="choix"  value="mode">
+            <label >Modéremment</label><br>
+            <input id="lege" type="radio" name="choix" value="defavorable">
+            <label >Légèrement</label><br>
+            <input id="pasinte" type="radio" name="choix"  value="inte">
+            <label >Pas intéressé</label><br>
+            <input id="aa" type="radio" name="choix" value="aucun">
+            <label >Aucun avis</label>
+          </fieldset>
+          <!--avis sur le projet-->
+          <fieldset>
+            <legend>Votre avis sur le projet :</legend>
+            <input id="f" type="radio" name="choix" value="favorable">
+            <label >Favorable</label><br>
+            <input id="ind" type="radio" name="choix"  value="indiff">
+            <label >Indifférent</label><br>
+            <input id="df" type="radio" name="choix" value="defavorable">
+            <label >Défavorable</label>
+          </fieldset>
+        
+        
+       
+          <br><br>
+          <!--mettre email-->
+          <fieldset>
+            <legend >Email pour suivi du projet :</legend>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Envoyer">
+          </fieldset>
+          
+        </form>
+     
+      </section>
+    </main>
+   
+   
+  </body>
+</html>

@@ -1,0 +1,177 @@
+html{
+
+    width: 100%;
+    background-color: rgb(70, 236, 255);
+  
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden ;
+  }
+  
+  /*modification liste*/
+  li {
+    list-style-type: none;
+    margin-bottom: 20px;
+   
+  }
+  
+  #contact-us .section-heading {
+    margin-bottom: -10px;
+  }
+  
+  #contact-us .section-heading h6 {
+    color: #5fb759;
+  }
+  
+
+  #contact-us .left-text-content ul li {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  #contact-us .left-text-content ul li img {
+    margin-right: 15px;
+  }
+  
+  #contact-us {
+    padding: 120px 100px;
+    margin-bottom: -100vh;
+  }
+  
+  #contact {
+    margin-top: 40px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    color: #7a7a7a;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    height: 46px;
+    outline: none;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: none;
+    padding: 20px;
+  }
+  
+  .contact-form ::-webkit-input-placeholder { /* Edge */
+    color: #7a7a7a;
+  }
+  
+  .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7a7a7a;
+  }
+  
+  .contact-form ::placeholder {
+    color: #7a7a7a;
+  }
+  
+  /*mise en forme des titres h1*/
+  h1 {
+    color: #4bad6c;
+    font-size: 40px;
+    background-color: #fff;
+    width: 25%;
+    text-align: center;
+    border-radius: 1.2em;
+    text-shadow: 2px 2px 5px black;
+    z-index: 1;
+    position: relative;
+    top: -12vh;
+  }
+  /*mise en forme des titres h1*/
+  h2 {
+    color: #000000;
+    font-size: 20px;
+    position: relative;
+    left: 3vw;
+    top: -12vh;
+    bottom: -100px;
+  }
+
+  /*déplace la marge vers le haut de la class-info*/
+.class-info{
+    top: -19vh;
+}
+
+/*mise en forme image*/
+img{
+    margin-bottom: -15px;
+}
+
+ /*Style du form */
+form {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    /* style des input*/
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+    
+
+    
+    /* styles des button*/
+    button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    /* style de contact-form */
+    .contact-form {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    }
+    
+    /*déplace à droite le main-button-icon*/
+    .main-button-icon {
+    float: right;
+    }
+    
+   
+    
+    /* mise en forme des classes name phone et email */
+    .name, .phone, .email {
+    width: 49%;
+    display: inline-block;
+    }
+    
+    /*déplace la marge du dernier element de email*/
+    .email:last-child {
+    margin-left: 2%;
+    }
+    
+    /* mise en forme fieldset */
+    fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    }

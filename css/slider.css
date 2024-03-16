@@ -1,0 +1,161 @@
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/* Conteneur du slider */
+.slider-container {
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  /* Slider */
+  .slider {
+    display: flex;
+    width: 100%;
+    animation: slide 30s 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s; 
+  }
+
+
+  /* Images dans le slider */
+  .slider img {
+    width: 100%;
+    min-width: 100%;
+  }
+  
+  /* Animation pour faire défiler les images */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-100%);
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    80% {
+      transform: translateX(-100%);
+    }
+    90% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+
+ 
+  
+  
+  
+
+  @keyframes text-enter{
+    0%{
+      transform: translateY(10vh);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+  }
+
+  .message{
+    color: #fff;
+ 
+    animation: text-enter 3000ms ease-in-out 500ms;
+    animation-iteration-count: 1;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    top: -42vh;
+    font-size: 40px;
+    
+    
+  }
+
+  .message:hover {
+    transform: scale(1.2); /* augmente la taille de 20% */
+   
+  }
+
+  @media only screen and (min-width: 1200px) {
+    /* styles spécifiques pour les écrans de largeur inférieure à 1400px */
+    .message {
+      font-size: 40px;
+      color: #fff;
+      z-index: 1;
+      position: relative;
+      top: -42vh;
+      text-align: center;
+      text-shadow: 2px 2px 8px black;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+  /* styles spécifiques pour les écrans de largeur supérieure à 1600px */
+ 
+  .message  {
+    font-size: 70px;
+    color: #fff;
+    z-index: 1;
+      position: relative;
+      top: -42vh;
+  }
+  nav a {
+    color: white; /* couleur de police blanche */
+    text-decoration: none; /* pas de surlignage */
+    font-size: 70px; /* taille de police de 20px */
+    margin: 0 10px; /* ajout d'un espace de 10px à droite et à gauche de chaque lien */
+  }
+
+  form {
+    width: 50%;
+    min-width: 50%;
+    height: auto;
+    min-height: auto;
+    left: 22%;
+    top: 10vh;
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(131, 151, 222);
+    z-index: 2;
+    position: relative;
+  
+  }
+
+
+}
+
+@media (hover: none) {
+  /* styles spécifiques pour les écrans tactiles */
+  
+  .message  {
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+      position: relative;
+      top: -12vh;
+  }
+
+  
+}
+
+  

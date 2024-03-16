@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="css/contact.css" />
+  <link rel="stylesheet" type="text/css" href="css/nav.css" />
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+  <title>Contact</title>
+</head>
+
+<body>  
+  <!--barre de navigation-->
+  <nav>
+    <a href="index.html">Home </a>
+    <a href="form.html" target="_blank">Form</a>
+    <a href="contact.html" target="_blank">Contact</a>
+  </nav>
+   
+   <section class="section" id="contact-us">
+        <div class="container">
+            <div class="row">
+               
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                          <!--titre de la page-->
+                            <h1>Nous Contacter</h1>
+                            <h2>Pour plus de renseignements envoyez nous une message.</h2>
+                        </div>
+                        <ul class="contact-info">
+                          <!--images avec information de l'entreprise-->
+                            <li><img src="img/contact-info-01.png" alt="">04 56 32 16 24</li>
+                            
+                            <li><img src="img/contact-info-02.png" alt="">projetniceco@gmail.com</li>
+                        </ul>
+                    </div>
+               
+                <!--questionnaire qui demande à rentrer les informations nécessaire pour nous contacter-->
+                    <div class="contact-form">
+                        <form id="contact"  method="get">
+                          <div class="row">
+                            <div class="name">
+                              <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Nom *" required="">
+                              </fieldset>
+                            </div>
+                            <div class="phone">
+                              <fieldset>
+                                <input name="phone" type="text" id="phone" placeholder="Numéro de téléphone" >
+                              </fieldset>
+                            </div>
+                            <div class="email col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" id="email" placeholder="Email*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="email ">
+                              <fieldset>
+                                <input name="subject" type="text" id="subject" placeholder="Objet *">
+                              </fieldset>
+                            </div>
+                           
+                              <fieldset>
+                                <textarea name="message" rows="6" id="message" placeholder="Message *" required=""></textarea>
+                              </fieldset>
+                           
+                           
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button-icon">Envoyer<i class="fa fa-arrow-right"></i></button>
+                              </fieldset>
+                            
+                          </div>
+                        </form>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
